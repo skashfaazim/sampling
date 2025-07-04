@@ -40,30 +40,73 @@ For the **Canadian General Social Survey on Giving, Volunteering, and Participat
 
 ## Part A - Survey Design: 
 
-The number of your chosen topic: `#`
+The number of your chosen topic: `1`
 
 Describe the purpose of your survey:
 ```
-write your answer here...
+The purpose of this survey is to identify the key factors driving high employee turnover within entry- and lower-level positions at a large tech company. The results will inform Human Resources about workplace issues that negatively impact employee satisfaction, with the aim of guiding targeted interventions and improving retention.
 ```
 
 Describe your target population, sampling frame, sampling units, and observational units:
 ```
-write your answer here...
+- **Target Population:** Current and former employees (within the last 12 months) who held entry- or lower-level positions across departments in the company.
+- **Sampling Frame:** An internal HR database that contains contact information and employment details of all current and recently exited employees.
+- **Sampling Units:** Individual employees (both current and former).
+- **Observational Units:** Responses from individual employees about their experiences and perceptions regarding the workplace.
+- **Sampling Strategy:** Stratified random sampling, ensuring proportional representation across departments and employment status (current vs. former employees), to capture diverse perspectives and reduce sampling bias.
 ```
 
 Your 5-10 question survey:
 ```
-1. write your question here...
-2. write your question here...
-3. write your question here...
-4. write your question here...
-5. write your question here...
-6. write your question here... (optional)
-7. write your question here... (optional)
-8. write your question here... (optional)
-9. write your question here... (optional)
-10. write your question here... (optional)
+1. How long did you work (or have you been working) at the company?
+   - Less than 6 months
+   - 6–12 months
+   - 1–2 years
+   - More than 2 years
+
+2. What department did/do you work in?
+   - Engineering/Development
+   - Sales/Marketing
+   - Customer Support
+   - HR/Admin
+   - Other: _________
+
+3. What were the main reasons for your departure (or considerations to leave)? (Select all that apply)
+   - Lack of growth opportunities
+   - Inadequate compensation or benefits
+   - Poor management
+   - High workload/stress
+   - Lack of recognition or support
+   - Better opportunity elsewhere
+   - Other: ____________
+
+4. How satisfied were/are you with the following aspects of your role?  
+   *(Rate each from 1 = Very Dissatisfied to 5 = Very Satisfied)*  
+   - Compensation and benefits  
+   - Opportunities for career advancement  
+   - Managerial support  
+   - Work-life balance  
+   - Workplace culture  
+
+5. Have you communicated your concerns to a supervisor or HR before leaving (or considering leaving)?
+   - Yes
+   - No
+   - Not applicable
+
+6. What improvements would most increase your job satisfaction? (Select up to 3)
+   - Better pay
+   - Career development programs
+   - More supportive leadership
+   - Better workload management
+   - Flexible work hours
+   - Team-building and inclusive culture
+
+7. Would you recommend this company to a friend looking for similar work?
+   - Yes
+   - No
+   - Maybe
+
+8. Are there any other comments or suggestions you would like to share?
 ```
 
 ## Part B - Survey Evaluation:
@@ -71,7 +114,73 @@ Your 5-10 question survey:
 Identify and describe survey features:
 
 ```
-write your answer here
+## 1. Sample type
+Probability sample with stratified design. Simple random sampling without replacement was used within each stratum. A *rejective sampling* method was applied to reduce over-sampling of non-volunteers.
+
+## 2. Sample size
+- Final sample size (after removing rejected respondents): **16,149**
+- Initial target sample size: **20,000**
+- Usable responses (including rejected): **19,857**
+
+## 3. Target population
+All persons aged 15 years or older living in the 10 Canadian provinces, excluding residents of the territories and full-time residents of institutions.
+
+## 4. Sampling frame
+The frame was constructed from:
+- Lists of landline and mobile telephone numbers available to Statistics Canada
+- The Address Register (AR) of all dwellings in the 10 provinces  
+86% of telephone numbers were linked to AR.
+
+## 5. Survey mode(s)
+- Self-completed electronic questionnaire (rEQ)  
+- Computer-Assisted Telephone Interviewing (iEQ)
+
+## 6. Timeline
+Data were collected from **September 4 to December 28, 2018**.
+
+## 7. Response rate
+The overall response rate was **41.9%**.
+
+## 8. Weights
+A person-level weight (**WGHT_PER**) is included in the PUMF to make estimates representative.  
+- Weights were adjusted for:
+  - Probability of selection
+  - Non-response
+  - Rejective sampling
+  - Population benchmarks by geography, age, sex, and income using raking methods  
+- Bootstrap weights are also available for variance estimation.
+
+## 9. Data processing
+- Responses entered electronically by respondents (rEQ) or interviewers (iEQ)  
+- Coding of open responses into standard classification systems (e.g., NAICS, ICNPO)  
+- Derivation of composite and recoded variables  
+- Some donor data were perturbed for confidentiality
+
+## 10. Cleaning, imputation, etc.
+- **Deterministic edits** and **flow edits** were applied  
+- **Hot-deck and donor imputation** used to fill item non-response or errors  
+- Out-of-scope cases and duplicate records were removed  
+- Valid skips (code 6) and non-response (code 9) were used consistently
+
+## 11. Sources of error
+- **Sampling errors** due to complex design and stratification  
+- **Non-sampling errors** including:
+  - Interviewer/respondent misunderstandings  
+  - Data entry and coding errors  
+  - Item and unit non-response  
+  - Mode effects (online vs. telephone)
+
+## 12. Limitations, known biases, etc.
+- **Under-coverage** of households without telephones  
+- **Lower response rate** among younger males and cell-phone-only households  
+- Comparisons with past GVP/CSGVP iterations may be **inappropriate** due to major design changes  
+- Self-reported data may be influenced by **social desirability and recall bias**
+
+## 13. Link to documentation and any additional sources used
+- [GSS GVP 2018 Survey Page](https://www23.statcan.gc.ca/imdb/p2SV.pl?Function=getSurvey&SDDS=4526)  
+- [Public Use Microdata File (PUMF) User Guide – PDF](https://www150.statcan.gc.ca/n1/en/catalogue/89M0033X)  
+- Internal reference: *2018_GSS33GVP_PUMFGuide.pdf*
+
 ```
 
 ## Rubric
